@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forread แนะนำหนังสือที่พูดถึงความโดดเดี่ยว, ความรัก, และแรงบันดาลใจในการใช้ชีวิต</title>
+    <meta name="keyword" content="หนังสือ, หนังสือที่ให้แรงบันดาลใจ, ความหมายของชีวิต,ความรัก, ความฝัน, การใช้ชีวิต, หนังสือพัฒนาตนเอง, แนะนำหนังสือ, เรียนรู้, ความงดงาม, ความเรียบง่าย, มิตรภาพ">
+    <meta name="description" content="สัมผัสการเดินทางในโลกของอารมณ์และความคิดผ่านหนังสือที่เต็มไปด้วยแรงบันดาลใจ เรื่องราวที่จะทำให้คุณรู้สึกถึงความฝัน ความรัก และความหมายของชีวิต พร้อมมอบความสุขจากการมองสิ่งเล็ก ๆ ภายในตัวตนของเราเอง">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav>
+        <div class="logo">Forreads</div>
+        <div class="search">
+            <form onsubmit="return searchBook(event);">
+                <input type="search" placeholder="Search" id="searchQuery">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <script>
+            function searchBook(event) {
+                event.preventDefault(); // หยุดการส่งฟอร์มปกติ
+                const query = document.getElementById('searchQuery').value.toLowerCase(); // รับค่าที่ผู้ใช้กรอก
+                
+                // ตรวจสอบค่าที่ผู้ใช้กรอกและเปลี่ยนเส้นทางตามนั้น
+                if (query === 'almond') { // เปลี่ยนเป็น lowercase
+                    window.location.href = '/List-book/book1.html';
+                } else if (query === 'i see you like i see the flower') { // เปลี่ยนเป็น lowercase
+                    window.location.href = '/List-book/book2.html';
+                } else if (query === 'a piece of the moon') { // เปลี่ยนเป็น lowercase
+                    window.location.href = '/List-book/book3.html';
+                } else {
+                    alert('Book not found!'); // แสดงข้อความถ้าไม่พบ
+                }
+            }
+        </script>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="" id="home">Home</a>
+                    <select name="books" id="book-list">
+                        <option value="">Book</option>
+                        <option value="1">Literature</option>
+                        <option value="2">Fiction</option>
+                        <option value="3">History</option>
+                        <option value="4">Wellness</option>
+                    </select>
+                    <a href="" id="con">Contact</a>
+                    <a href="">Login</a>
+                    <a href="" id="regis">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="con">
+    <div class="info">
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide w-85" style="height: 60px;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/content/pexels-abby-chung-371167-1106468.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-black bg-white prompt-regular rounded-bg">"เมื่อคุณเรียนรู้ที่จะอ่าน คุณจะเป็นอิสระตลอดไป"</h5><br>
+                            <p class="text-black bg-white prompt-regular rounded-bg">Frederick Douglas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/content/pexels-toulouse-3457273.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-black bg-white prompt-regular rounded-bg">"หนังสือเป็นเสมือนเครื่องจุดประกายจินตนาการ"</h5><br>
+                            <p class="text-black bg-white prompt-regular rounded-bg">Alan Bennett</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/content/pexels-fox-58267-214659.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-black bg-white prompt-regular rounded-bg">"หนังสือคือความฝันที่คุณถืออยู่ในมือ"</h5><br>
+                            <p class="text-black bg-white prompt-regular rounded-bg">Neil Gaimen</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+ 
+  
+
+    <div class="container">
+        <div class="row mt-5 te text" style="margin-bottom: 5;">
+            <h5 class="prompt-light paragraph"> สัมผัสกับการเดินทางในโลกของอารมณ์และความคิดผ่านหนังสือที่เปี่ยมไปด้วยแรงบันดาลใจ กับเรื่องราวที่จะทำให้รู้สึกถึงความฝัน ความรัก และความหมายของชีวิต ที่จะมอบการสัมผัสถึงความสุขผ่านการมองสิ่งเล็ก ๆ ที่มีอยู่ข้างในตัวตน เพื่อนำไปเป็นอีกหนึ่งแรงผลักดันของการก้าวไปข้างหน้าอีกก้าวในการใช้ชีวิตอันเหนื่อยล้า
+            </h5>
+        </div>
+    </div>
+
+    <main style="margin-top: 0;">
+        <section class="section1"></section>
+        <h3>List Book</h3>
+        <section class="section2">
+            <div class="inbox">
+                <h3 class="prompt-regular">Almond</h3>
+                <a href="List-book/book1.html"><div class="box box1"></div></a>
+                <h5 class="prompt-regular">ผ่านการสูญเสียและการเปลี่ยนแปลง เพื่อค้นหาตัวตน เรียนรู้ที่จะเข้าใจความรัก มิตรภาพ และความหมายของการมีชีวิตอยู่</h5>
+              </div>
+
+            <div class="inbox">
+                <h3 class="prompt-regular">I see you like i see the flower</h3>
+                <a href="List-book/book2.html"><div class="box box2">
+                </div>
+                </a>
+                <h5 class="prompt-regular">ความงดงาม ความเรียบง่าย ความรักและความหมายในชีวิต ทุกความธรรมดาที่มีความพิเศษซ่อนอยู่ รอให้คุณค้นพบ
+                </h5>
+            </div>
+            <div class="inbox">
+                <h3 class="prompt-regular">A piece of the moon</h3>
+                <a href="List-book/book3.html"><div class="box box3"></div></a>
+                <h5 class="prompt-regular">ค้นหาชิ้นส่วนของดวงจันทร์ในหัวใจ บางครั้งความงดงามอาจอยู่ใกล้แค่เอื้อม</h5>
+            </div>
+        </section>
+    </main>
+
+    <authur>
+    <div class="text-center mt-5">
+          <img src="images/sunset.jfif" alt="" class="rounded-circle mb-3" width="100" height="100"> 
+          <h4 class="prompt-regular">By W. Parichat</h4>
+    </div>
+    </authur>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
