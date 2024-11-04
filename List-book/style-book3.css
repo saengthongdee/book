@@ -51,7 +51,7 @@ main{
             font-family: "Prompt", sans-serif;
             font-weight: 400;
             font-style: normal;
-            text-indent: 40px; /* Indents the first line of the paragraph */
+            text-indent: 40px;
     }
     }
 }
